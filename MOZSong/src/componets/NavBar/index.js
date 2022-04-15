@@ -8,12 +8,30 @@ export const NavBar = () => {
                 <p>Explorar</p>
             </div>
             <div class="navbar__menu">
-                <a href="#"><i id="icon"class="fa-solid fa-music"></i><span>Musicas</span</a>
-                <a href="#"><i id="icon" class="fa-solid fa-list"></i><span>Categorias</span></a>
-                <a href="#"><i id="icon" class="fa-solid fa-record-vinyl"></i><span>Albuns</span></a>
-                <a href="#"><i id="icon" class="fa-brands fa-artstation"></i><span>Artistas</span></i></a>
-                <a href="#"><i id="icon" class="fa-solid fa-video"></i><span>Videos</span></a>
-                <a href="#"><i id="icon" class="fa-solid fa-rss"></i><span>Noticias</span></a>
+                <a class="link" href="#">
+                    <i id="icon"class="fa-solid fa-music"> </i>
+                    <span>Musicas</span
+                </a>
+                <a class="link" href="#">
+                    <i id="icon" class="fa-solid fa-list"></i>
+                    <span>Categorias</span>
+                </a>
+                <a class="link" href="#">
+                    <i id="icon" class="fa-solid fa-record-vinyl"></i>
+                    <span>Albuns</span>
+                </a>
+                <a class="link" href="#">
+                    <i id="icon" class="fa-brands fa-artstation"></i>
+                    <span>Artistas</span></i>
+                </a>
+                <a class="link"  href="#">   
+                    <i id="icon" class="fa-solid fa-video"></i>
+                    <span>Videos</span>
+                </a>
+                <a class="link"  href="#">
+                    <i id="icon" class="fa-solid fa-rss"></i>
+                    <span>Noticias</span>
+                </a>
             </div>
         </div>
         <div class="nav__info">
@@ -34,7 +52,8 @@ export const BarraTarefa=()=>{
     return `
     <div class="barra__tarefa">
         <div class="logo">
-            <h1>Song mz</h1>
+            <h1> <i id="logo__nav" class="fa-solid fa-music"></i><span>Song mz</span></h1>
+            <i  id="icon_search" class="fa-solid fa-magnifying-glass"></i>
             <input type="search" name="" id="search" placeholder="Search">
         </div>
 
@@ -59,3 +78,9 @@ export const BarraDireita=()=>{
     </div>
     `
 }
+
+
+//event on js
+// evento do mouseover no link dos menus
+//declaracao de variavel
+
