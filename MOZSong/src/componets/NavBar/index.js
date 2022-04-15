@@ -8,12 +8,12 @@ export const NavBar = () => {
                 <p>Explorar</p>
             </div>
             <div class="navbar__menu">
-                <a href="#">Musicas</a>
-                <a href="#">Categorias</a>
-                <a href="#">Albuns</a>
-                <a href="#">Artistas</a>
-                <a href="#">Videos</a>
-                <a href="#">Noticias</a>
+                <a href="#"><i id="icon"class="fa-solid fa-music"></i><span>Musicas</span</a>
+                <a href="#"><i id="icon" class="fa-solid fa-list"></i><span>Categorias</span></a>
+                <a href="#"><i id="icon" class="fa-solid fa-record-vinyl"></i><span>Albuns</span></a>
+                <a href="#"><i id="icon" class="fa-brands fa-artstation"></i><span>Artistas</span></i></a>
+                <a href="#"><i id="icon" class="fa-solid fa-video"></i><span>Videos</span></a>
+                <a href="#"><i id="icon" class="fa-solid fa-rss"></i><span>Noticias</span></a>
             </div>
         </div>
         <div class="nav__info">
@@ -35,7 +35,7 @@ export const BarraTarefa=()=>{
     <div class="barra__tarefa">
         <div class="logo">
             <h1>Song mz</h1>
-            <input type="search" name="" id="" placeholder="Search">
+            <input type="search" name="" id="search" placeholder="Search">
         </div>
 
       

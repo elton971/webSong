@@ -10,6 +10,10 @@
 .logo h1{
     margin-right: 100px;
 }
+ #search{
+    width:800px;
+    outline: none;
+}
 .side__bar{
     float: left;
     width: 200px;
@@ -28,7 +32,15 @@
     display:block; 
     text-decoration: none;
     color:black;
-    padding:10px
+    padding:10px;
+    margin-top:10px;
+}
+.navbar__menu a span{
+    margin-left:10px
+}
+.navbar__menu #icon{
+    color:rgba(237, 47, 4, 0.972);
+    font-size: 20px;
 }
 
 .barra__direita{
