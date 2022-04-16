@@ -1,33 +1,49 @@
-.barra__tarefa{
+.barra__tarefa {
     width: 100%;
-    height:10vh;
-    border-bottom:  1px solid rgba(168, 168, 168, 0.658);
+    height: 10vh;
+    border-bottom: 1px solid rgba(168, 168, 168, 0.658);
+
 }
-.barra__tarefa .logo{
-    display:flex;
+
+#check,
+.btn-Menu {
+    display: none;
+}
+
+.barra__tarefa .logo {
+    display: flex;
     padding: 20px;
+    align-items: center;
+
 }
-.logo h1{
+
+.logo h1 {
     margin-right: 100px;
+
 }
-#logo__nav{
+
+#logo__nav {
+
     margin-right: 10px;
-    color:red;
+    color: red;
 }
-.logo span{
-    color:black;
+
+.logo span {
+    color: black;
     font-size: 30px;
 }
 
-#icon_search{
+
+#icon_search {
     position: relative;
     font-size: 20px;
-    top:2px;
+    top: 2px;
     left: 20px;
 }
-#search[type=search]{
+
+#search[type=search] {
     width: 100%;
-    max-width:400px;
+    max-width: 400px;
     height: 30px;
     border: none;
     border-bottom: 4px solid rgba(168, 168, 168, 0.658);
@@ -36,68 +52,141 @@
     color: #000;
     transition: 0.5s;
 }
-#search[type=search]:focus{
+
+#search[type=search]:focus {
     transition: 0.5s;
-    max-width:1000px;
-}
- #search{
-    width:400px;
-    outline: none;
+    max-width: 1000px;
 }
 
-.side__bar{
+#search {
+    width: 400px;
+    outline: none;
+    transition: all 0.5s;
+}
+
+#search.show {
+    display: block;
+    top: 100px;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.side__bar {
     float: left;
     width: 200px;
-    padding:10px 10px;
-    min-height:90vh;
-    overflow-y: auto;/*vai criar um scroll no componente */
-    overflow-x: hidden; 
+    padding: 10px 10px;
+    min-height: 90vh;
+    overflow-y: auto;
+    /*vai criar um scroll no componente */
+    overflow-x: hidden;
     border-right: 1px solid rgba(168, 168, 168, 0.658);
 }
-.navbar{
-    color:black;
-    margin:20px; 
-   
+
+.side__bar.show {
+    left: 0;
+    transition: 0.5s;
 }
-.navbar__menu a, .nav__info__details a{
-    display:block; 
+
+.navbar {
+    color: black;
+    margin: 20px;
+
+}
+
+.navbar__menu a,
+.nav__info__details a {
+    display: block;
     text-decoration: none;
-    color:black;
-    padding:10px;
-    margin-top:10px;
-   
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+
 }
-.navbar__menu a{
+
+.navbar__menu a {
     width: 200px;
-    margin-left:-30px;
+    margin-left: -30px;
 }
-.navbar__menu a span{
-    margin-left:10px
+
+.navbar__menu a span {
+    margin-left: 10px
 }
-.navbar__menu #icon{
-    color:rgba(237, 47, 4, 0.972);
+
+.navbar__menu #icon {
+    color: rgba(237, 47, 4, 0.972);
     font-size: 20px;
-    margin-left:30px;
+    margin-left: 30px;
 }
 
-.navbar__menu a:hover{
-    background-color:rgba(5, 85, 111, 0.972);
-    color:white;
+.navbar__menu a:hover {
+    background-color: rgba(5, 85, 111, 0.972);
+    color: white;
 }
 
-.barra__direita{
+.barra__direita {
     float: right;
     border-left: 1px solid rgba(168, 168, 168, 0.658);
-    width:200px;
+    width: 200px;
     height: 90vh;
+    transition: all 0.5s;
 }
-.top__musica{
-    padding:20px 20px;
+
+.top__musica {
+    padding: 20px 20px;
 }
-.top__musica h1{
-    font-weight:bold;
+
+.top__musica h1 {
+    font-weight: bold;
     font-size: 13px;
 }
-.top__five p{
-    padding:10px;
+
+.top__five p {
+    padding: 10px;
+}
+
+
+@media screen and (max-width:700px) {
+
+    .barra__tarefa {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .side__bar {
+        position: absolute;
+        left: -200px;
+        transition: all .5s;
+        width: 200px;
+    }
+
+    .logo h1,
+    .barra__direita {
+        display: none;
+        transition: all 0.5s;
+    }
+
+    #icon_search {
+        font-size: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    #search {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        opacity: 0;
+
+    }
+
+    .btn-Menu {
+        display: block;
+        cursor: pointer;
+        font-size: 50px;
+        width: 40px;
+        color: rgba(237, 47, 4, 0.972);
+        margin-left: 30px;
+
+    }
 }

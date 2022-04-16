@@ -1,8 +1,9 @@
 import "./index.css"
 
 export const NavBar = () => {
-  return `
+    return `
     <div class="side__bar">
+        
         <div class="navbar">
             <div navbar__logo>
                 <p>Explorar</p>
@@ -48,12 +49,14 @@ export const NavBar = () => {
     `;
 };
 
-export const BarraTarefa=()=>{
+export const BarraTarefa = () => {
     return `
     <div class="barra__tarefa">
+        
+        <label for="check" class="btn-Menu">&equiv;</label>
         <div class="logo">
             <h1> <i id="logo__nav" class="fa-solid fa-music"></i><span>Song mz</span></h1>
-            <i  id="icon_search" class="fa-solid fa-magnifying-glass"></i>
+            <label for="" id="icon_label"><i  id="icon_search" class="fa-solid fa-magnifying-glass"></i></label>
             <input type="search" name="" id="search" placeholder="Search">
         </div>
 
@@ -62,7 +65,7 @@ export const BarraTarefa=()=>{
     `
 }
 
-export const BarraDireita=()=>{
+export const BarraDireita = () => {
     return `
     <div class="barra__direita">
         <div class="top__musica">
@@ -83,4 +86,3 @@ export const BarraDireita=()=>{
 //event on js
 // evento do mouseover no link dos menus
 //declaracao de variavel
-
